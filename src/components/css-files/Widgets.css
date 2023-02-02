@@ -1,0 +1,86 @@
+.widgets {
+  /* Sticky Widgets sidebar stays on top when scroll down */
+  top: 80px;
+  position: sticky;
+  /* Widgets sidebar takes up 20% of screen */
+  flex: 0.25;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  text-align: center;
+  height: fit-content;
+  padding-bottom: 10px;
+}
+
+.widgets__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.widgets__header > h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.widgets__article {
+  display: flex;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.widgets__article:hover {
+  background-color: whitesmoke;
+}
+
+.widgets__articleLeft {
+  color: #0177b7;
+  margin-right: 5px;
+}
+
+.widgets__articleLeft > .MuiSvgIcon-root {
+  font-size: 1.1rem;
+}
+
+.widgets__articleRight {
+  flex: 1;
+}
+
+.widgets__articleRight > h4 {
+  font-size: 0.85rem;
+}
+
+.widgets__articleRight > p {
+  font-size: 12px;
+  color: gray;
+}
+
+@media screen and (max-width: 700px) {
+  .widgets {
+    position: relative;
+    top: -10px;
+
+    order: 1;
+  }
+
+  .widgets__article {
+    padding: 0px 10px;
+  }
+
+  .widgets__header {
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+}
+
+.link{
+  text-decoration: none;
+}
+
+.link:hover{
+
+  text-decoration:underline;
+
+
+}

@@ -1,0 +1,23 @@
+.feed__inputOption:hover {
+  cursor: pointer;
+  background-color: lightgray;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.post__inputOption:hover {
+  cursor: pointer;
+  background-color: lightgray;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.post__inputOption:active {
+  transform: scale(0.85);
+  padding: 0px;
+}
+
+.feed__inputOption:active {
+  transform: scale(0.85);
+  padding: 0px;
+}
